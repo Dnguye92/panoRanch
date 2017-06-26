@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PanoRanch">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta viewport="UTF-8">
+	<title>Pano Ranch</title>
+	<link rel="icon" href="img/head-logo.png">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<img src="img/head-logo.png" id="logo">
+	
+	<ul id="slide-out" class="side-nav">
+		<li><a class="waves-effect" href="#!">Home</a></li>
+		<li><a class="waves-effect" href="#!">Donation</a></li>
+		<li><a class="waves-effect" href="#!">Sign in/Register</a></li>
+		<li><a class="waves-effect" href="#!">Courses &amp; Events</a></li>
+		<li><a class="waves-effect" href="#!">More Information</a></li>
+		<li><a class="waves-effect" href="#!">Contact Us</a></li>
+	</ul>
+	<a href="#" data-activates="slide-out" class="button-collapse">&#9776;</a>
+			
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<p id="landingText">Pano Ranch</p>
+				<div id="video">	
+					<video playsinline autoplay muted loop id="bgVid">
+						<source src="img/flowers.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div id="overLay"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	<main id="main" ng-view>
+		
+	</main>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.2.min.js"
+  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialInit.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="angular/angular.js"></script>
+<script type="text/javascript" src="angular/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controllers/browseCtrl.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

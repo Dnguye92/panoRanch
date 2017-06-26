@@ -1,0 +1,56 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h1>best selling flowers &amp; gifts</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3">
+		<ul id="categories">
+			<li><a class="waves-effect" href="#">Protea Stem</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Fresh Floral Decor</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Event Supplies</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Seeds</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Dry &amp; Preserved</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Herbs</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Gifts</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Roses</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a class="waves-effect" href="#">Nursery</a></li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">Sort By</button>
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="caret"></span>
+				<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="waves-effect" href="#">featured</a></li>
+					<li><a class="waves-effect" href="#">low to high</a></li>
+					<li><a class="waves-effect" href="#">high to low</a></li>
+					<li><a class="waves-effect" href="#">rating</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-9" id="product">
+				<div class="col-xs-3 box text-center" ng-repeat="flowers in flowerName">
+					<img ng-src="img/{{flowers.image}}.png" class="flowerImages">
+					<h3>{{flowers.name}}</h3>
+					<p>${{flowers.price}}</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
