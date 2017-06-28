@@ -1,6 +1,5 @@
 var PanoRanch = angular.module('PanoRanch', [
 	'ngRoute',
-	'browseCtrl',
 	'navigationService'
 ]);
 
