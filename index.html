@@ -5,23 +5,24 @@
 	<meta viewport="UTF-8">
 	<title>Pano Ranch</title>
 	<link rel="icon" href="img/head-logo.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/hamburgers.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".side-nav" data-offset="500">
 	<img src="img/head-logo.png" id="logo">
 	
 	<ul id="slide-out" class="side-nav">
-		<li><a class="waves-effect" href="#!">Home</a></li>
+		<li><a class="waves-effect" href="#main">Home</a></li>
 		<li><a class="waves-effect" href="#!">Donation</a></li>
-		<li><a class="waves-effect" href="#!">Sign in/Register</a></li>
+		<li><a class="waves-effect" href="#/login" ng-click="login()">Sign in/Register</a></li>
 		<li><a class="waves-effect" href="#!">Courses &amp; Events</a></li>
 		<li><a class="waves-effect" href="#!">More Information</a></li>
 		<li><a class="waves-effect" href="#!">Contact Us</a></li>
 	</ul>
-	<a href="#" data-activates="slide-out" class="button-collapse">&#9776;</a>
+	<a href="#" data-activates="slide-out" class="button-collapse waves-effect">&#9776;</a>
 			
 	<div class="container-fluid">
 		<div class="row">
@@ -42,6 +43,64 @@
 		
 	</main>
 
+	<section id="occassions">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>something for every occassion</h1>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-xs-4">
+					<img src="img/natural.jpg" class="img-responsive">
+				</div>
+				<div class="col-xs-4 text-center">
+					<div class="boxes text-center">
+						<img src="img/romance2.jpg" class="img-responsive">
+					</div>
+					<div class="boxes">
+						<img src="img/celebration2.jpg" class="img-responsive">
+						
+					</div>
+				</div>
+				<div class="col-xs-4 text-center">
+					<div class="boxes">
+						<img src="img/wedding2.jpg" class="img-responsive">
+					</div>
+					<div class="boxes">
+						<img src="img/education2.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>contact us</h1>
+				<hr>
+			</div>
+		</div>
+
+		<div class="col-xs-12 text-center logoBack">
+			<p>office: (408)746-5252</p>
+			<p>cell: (408)743-5910</p>
+			<p>fax: (650)851-2910</p>
+			<p>email: <a href="mailto:panoranchsv@gmail.com">panoranchsv@gmail.com</a></p>
+			<p id="contactBlurb">We have been serving the discriminating tastes of our clients since 2009. All of our plants and flowers are grown on our ranch to assure total control of the growing process. All orders are ready to be shipped or picked up in 3 business days.</p>
+		</div>
+
+		<div class="col-xs-12" id="contactIcons">
+			<a class="waves-effect" href=""><i class="fa fa-yelp fa-3x" aria-hidden="true"></i></a>
+			<a class="waves-effect" href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+			<a class="waves-effect" href=""><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+			<a class="waves-effect" href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
 <script
   src="https://code.jquery.com/jquery-2.2.2.min.js"
   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -49,10 +108,19 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/materialInit.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="angular/angular.js"></script>
 <script type="text/javascript" src="angular/angular-route.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controllers/browseCtrl.js"></script>
+<script type="text/javascript" src="services/navService.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		smoothScroll.init({
+			selector: '[data-scroll]'
+		})
+	});
+</script>
 </body>
 </html>

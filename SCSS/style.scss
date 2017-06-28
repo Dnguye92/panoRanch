@@ -9,6 +9,15 @@ html, body {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+	position: relative;
+}
+
+hr {
+	width: 20%;
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: $panoPink;
+	margin: 20px auto 70px auto;
 }
 
 .container-fluid, .col-xs-12 {
@@ -29,12 +38,13 @@ html, body {
 	font-size: 36px;
 	// font-weight: bold;
 	// color: #EE6E73;
-	color: white;
+	color: black;
 }
 
 .button-collapse:hover, .button-collapse:focus {
 	text-decoration: none;
-	color: white;
+	// color: white;
+	color: black;
 }
 
 #landingText {
@@ -105,11 +115,15 @@ video#bgVid {
 	li>a {
 		font-size: 28px;
 		&:hover, &:focus {
-			color: #F1D6D6;
+			color: $panoPink;
 			background-color: transparent;
 			text-decoration: none;
 		}
 	}
+}
+
+.button-collapse .active {
+	color: black;
 }
 
 #main {
@@ -119,7 +133,7 @@ video#bgVid {
 
 #main {
 	h1 {
-		margin: 80px auto;
+		margin: 80px auto 0 auto;
 		font-size: $labelFontSize;
 	}
 }
@@ -127,7 +141,7 @@ video#bgVid {
 #categories {
 	// background-color: #F1D6D6;
 	border-radius: 4px;
-	border: solid 3px #F1D6D6;
+	border: solid 3px $panoPink;
 	height: 350px;
 	width: 250px;
 	text-align: left;
@@ -144,7 +158,7 @@ video#bgVid {
 		color: black;
 		&:hover, &:focus {
 			text-decoration: none;
-			color: #F1D6D6;
+			color: $panoPink;
 		}
 	}
 }
@@ -153,9 +167,13 @@ video#bgVid {
 	float: right;
 }
 
+form {
+	display: inline-block;
+}
+
 .dropdown-menu {
 	li > a:hover, a:focus {
-		color: #F1D6D6;
+		color: $panoPink;
 		background-color: transparent;
 		text-decoration: none;
 	}
@@ -165,4 +183,63 @@ video#bgVid {
 	p {
 		font-size: 20px;
 	}
+	// padding-bottom: 70px;
 }
+
+#occassions {
+	margin: 80px auto;
+	padding-bottom: 80px;
+	background-color: $panoPink;
+	h1 {
+		margin-top: 70px;
+		font-size: $labelFontSize;
+	}
+	hr {
+		border-color: white;
+		border-width: 2px;
+		width: 20%;
+	}
+	.boxes {
+		margin-left: 15px;
+		h2 {
+			position: absolute;
+			display: block;
+			margin-left: 70px;
+			top: 40px;
+			color: white;
+		}
+	}
+	.boxes:nth-child(0n+1) {
+		margin-bottom: 30px;
+	}
+}
+
+#contact {
+	// font-weight: bold;
+	h1 {
+		font-size: $labelFontSize;
+	}
+	hr {
+		width: 10%;
+	}
+	#contactBlurb {
+		width: 50%;
+		margin: 0 auto;
+	}
+	#contactIcons {
+		margin: 25px auto;
+		a {
+			padding: 0 15px;
+			color: black;
+			&:hover, &:focus {
+				color: $panoPink;
+			}
+		}
+	}
+	// .logoBack {
+	// 	background-image: url('../img/head-logo.png');
+	// 	background-repeat: no-repeat;
+	// 	background-position: center;
+	// }
+}
+
