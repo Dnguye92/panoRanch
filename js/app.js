@@ -6,12 +6,15 @@ var PanoRanch = angular.module('PanoRanch', [
 PanoRanch.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'views/browse.html',
+		templateUrl: 'views/home.html',
 		controller: 'browseCtrl'
 	})
 	.when('/login', {
 		templateUrl: 'views/login.html'
 		// controller: 'loginCtrl'
+	})
+	.when('/cart', {
+		templateUrl: 'views/cart.html'
 	})
 	.otherwise({
 		redirectTo: '/'

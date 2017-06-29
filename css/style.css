@@ -71,6 +71,16 @@ video#bgVid {
   top: 50px;
   left: 50px; }
 
+#cart {
+  text-decoration: none;
+  color: black; }
+
+.fa-shopping-cart {
+  position: fixed;
+  z-index: 1000;
+  top: 50px;
+  right: 120px; }
+
 .side-nav li:nth-child(1) {
   margin-top: 150px; }
 .side-nav li {
@@ -160,5 +170,98 @@ form {
     color: black; }
     #contact #contactIcons a:hover, #contact #contactIcons a:focus {
       color: #FFD7DC; }
+
+#loginContainer, #registerContainer {
+  margin: 125px 0; }
+  #loginContainer h1, #registerContainer h1 {
+    padding-top: 25px;
+    margin-bottom: 50px; }
+  #loginContainer .btn, #registerContainer .btn {
+    background-color: #cf2a27; }
+  #loginContainer #registerBox, #registerContainer #registerBox {
+    background-color: #FFD7DC;
+    border-radius: 3px;
+    height: 680px;
+    width: 80%;
+    margin: 0 auto; }
+    #loginContainer #registerBox .input-field, #registerContainer #registerBox .input-field {
+      margin: 15px auto; }
+      #loginContainer #registerBox .input-field input:focus, #registerContainer #registerBox .input-field input:focus {
+        border-bottom: 1px solid grey;
+        box-shadow: 0 1px 0 0 grey; }
+      #loginContainer #registerBox .input-field label, #registerContainer #registerBox .input-field label {
+        padding-left: 37px;
+        color: black;
+        font-size: 12px; }
+    #loginContainer #registerBox .input-field input#fName, #loginContainer #registerBox input#lName,
+    #loginContainer #registerBox input#city, #loginContainer #registerBox input#state, #loginContainer #registerBox input#zipcode, #loginContainer #registerBox input#phoneNumber, #registerContainer #registerBox .input-field input#fName, #registerContainer #registerBox input#lName,
+    #registerContainer #registerBox input#city, #registerContainer #registerBox input#state, #registerContainer #registerBox input#zipcode, #registerContainer #registerBox input#phoneNumber {
+      width: 80%;
+      margin: 0 auto; }
+    #loginContainer #registerBox .input-field input[type=email], #registerContainer #registerBox .input-field input[type=email] {
+      width: 85%;
+      margin: 15px auto;
+      border-bottom: 1px solid grey; }
+    #loginContainer #registerBox .input-field input[type=text], #registerContainer #registerBox .input-field input[type=text] {
+      margin: 15px auto;
+      border-bottom: 1px solid grey; }
+    #loginContainer #registerBox #address, #registerContainer #registerBox #address {
+      width: 85%; }
+    #loginContainer #registerBox #regPw, #loginContainer #registerBox #confirmPw, #registerContainer #registerBox #regPw, #registerContainer #registerBox #confirmPw {
+      width: 85%;
+      margin: 0 auto; }
+  #loginContainer #loginBox, #registerContainer #loginBox {
+    background-color: #FFD7DC;
+    border-radius: 3px;
+    height: 290px;
+    width: 80%;
+    margin: 0 auto; }
+    #loginContainer #loginBox .input-field, #registerContainer #loginBox .input-field {
+      width: 70%;
+      margin: 15px auto; }
+    #loginContainer #loginBox .input-field label, #registerContainer #loginBox .input-field label {
+      color: black;
+      font-size: 12px; }
+    #loginContainer #loginBox .input-field input[type=password]:focus + label, #loginContainer #loginBox .input-field input[type=email]:focus + label, #registerContainer #loginBox .input-field input[type=password]:focus + label, #registerContainer #loginBox .input-field input[type=email]:focus + label {
+      color: black; }
+    #loginContainer #loginBox .input-field input[type=password],
+    #loginContainer #loginBox .input-field input[type=email], #registerContainer #loginBox .input-field input[type=password],
+    #registerContainer #loginBox .input-field input[type=email] {
+      border-bottom: 1px solid grey; }
+    #loginContainer #loginBox .input-field input[type=password]:focus,
+    #loginContainer #loginBox .input-field input[type=email]:focus, #registerContainer #loginBox .input-field input[type=password]:focus,
+    #registerContainer #loginBox .input-field input[type=email]:focus {
+      border-bottom: 1px solid grey;
+      box-shadow: 0 1px 0 0 grey; }
+
+#cartContainer {
+  margin: 140px auto; }
+  #cartContainer h1 {
+    display: inline-block; }
+  #cartContainer #listedItems {
+    border-top: #FFD7DC 3px solid;
+    width: 85%;
+    margin: 0 auto; }
+  #cartContainer #summary {
+    width: 90%;
+    height: 800px;
+    background-color: #FFD7DC;
+    border-color: #FFD7DC;
+    border-radius: 3px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px; }
+    #cartContainer #summary hr {
+      border-color: grey;
+      width: 90%;
+      margin: 0;
+      border-width: 1px; }
+    #cartContainer #summary label {
+      display: block;
+      font-size: 12px; }
+    #cartContainer #summary #summaryCity, #cartContainer #summary #summaryState,
+    #cartContainer #summary #summaryZipcode, #cartContainer #summary #summaryPhone {
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

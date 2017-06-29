@@ -100,6 +100,17 @@ video#bgVid {
 	left: 50px;
 }
 
+#cart {
+	text-decoration: none;
+	color: black;
+}
+.fa-shopping-cart {
+	position: fixed;
+	z-index: 1000;
+	top: 50px;
+	right: 120px;
+}
+
 .side-nav {
 	li:nth-child(1) {
 		margin-top: 150px;
@@ -241,5 +252,121 @@ form {
 	// 	background-repeat: no-repeat;
 	// 	background-position: center;
 	// }
+}
+
+#loginContainer, #registerContainer {
+	margin: 125px 0;
+	h1 {
+		// font-size: $labelFontSize;
+		padding-top: 25px;
+		margin-bottom: 50px;
+	}
+	.btn {
+		background-color: #cf2a27;
+	}
+	#registerBox {
+		background-color: $panoPink;
+		border-radius: 3px;
+		height: 680px;
+		width: 80%;
+		margin: 0 auto;
+		.input-field {
+			margin: 15px auto;
+			input:focus {
+				border-bottom: 1px solid grey;
+				box-shadow: 0 1px 0 0 grey;
+			}
+			label {
+				padding-left: 37px;
+				color: black;
+				font-size: 12px;
+			}
+		}
+		.input-field input#fName, input#lName, 
+		input#city, input#state, input#zipcode, input#phoneNumber {
+			width: 80%;
+			margin: 0 auto;
+		}
+		.input-field input[type=email] {
+			width: 85%;
+			margin: 15px auto;
+			border-bottom: 1px solid grey;
+		}
+		.input-field input[type=text] {
+			margin: 15px auto;
+			border-bottom: 1px solid grey;
+		}
+		#address {
+			width: 85%;
+		}
+		#regPw, #confirmPw {
+			width: 85%;
+			margin: 0 auto;
+		}
+	}
+	#loginBox {
+		background-color: $panoPink;
+		border-radius: 3px;
+		height: 290px;
+		width: 80%;
+		margin: 0 auto;
+		.input-field {
+			width: 70%;
+			margin: 15px auto;
+		}
+		.input-field label {
+	    	color: black;
+	    	font-size: 12px;
+	    }
+		.input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label {
+	     color: black;
+	    }
+		.input-field input[type=password], 
+		.input-field input[type=email] {
+			border-bottom: 1px solid grey;
+		}
+		.input-field input[type=password]:focus, 
+		.input-field input[type=email]:focus {
+		     border-bottom: 1px solid grey;
+		     box-shadow: 0 1px 0 0 grey;
+		}
+	}
+}
+
+#cartContainer {
+	margin: 140px auto;
+	h1 {
+		display: inline-block;
+	}
+	#listedItems {
+		border-top: $panoPink 3px solid;
+		width: 85%;
+		margin: 0 auto;
+	}
+	#summary {
+		width: 90%;
+		height: 800px;
+		background-color: $panoPink;
+		border-color: $panoPink;
+		border-radius: 3px;
+		padding-top: 20px;
+		margin: 0 auto;
+		text-align: left;
+		padding-left: 20px;
+		hr {
+			border-color: grey;
+			width: 90%;
+			margin: 0;
+			border-width: 1px;
+		}
+		label {
+			display: block;
+			font-size: 12px;
+		}
+		#summaryCity, #summaryState,
+		#summaryZipcode, #summaryPhone {
+			display: inline-block;
+		}
+	}
 }
 
