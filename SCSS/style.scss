@@ -232,6 +232,7 @@ form {
 	}
 	hr {
 		width: 10%;
+		margin: 20px auto;
 	}
 	#contactBlurb {
 		width: 50%;
@@ -434,6 +435,10 @@ form {
 	}
 	#adminContainer {
 		margin: 0 auto;
+	}
+	#adminContainer a, #bottomAdminBox a{
+		text-decoration: none;
+		color: #cf2a27;
 	}
 }
 

@@ -159,7 +159,8 @@ form {
 #contact h1 {
   font-size: 48px; }
 #contact hr {
-  width: 10%; }
+  width: 10%;
+  margin: 20px auto; }
 #contact #contactBlurb {
   width: 50%;
   margin: 0 auto; }
@@ -312,5 +313,8 @@ form {
       width: 100%; }
   #categoryContainer #adminContainer {
     margin: 0 auto; }
+  #categoryContainer #adminContainer a, #categoryContainer #bottomAdminBox a {
+    text-decoration: none;
+    color: #cf2a27; }
 
 /*# sourceMappingURL=style.css.map */
