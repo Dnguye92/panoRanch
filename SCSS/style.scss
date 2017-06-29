@@ -34,7 +34,7 @@ hr {
 	position: fixed;
 	z-index: 6;
 	right: 50px;
-	top: 50px;
+	top: 25px;
 	font-size: 36px;
 	// font-weight: bold;
 	// color: #EE6E73;
@@ -96,7 +96,7 @@ video#bgVid {
 #logo {
 	z-index: 1000;
 	position: fixed;
-	top: 50px;
+	top: 25px;
 	left: 50px;
 }
 
@@ -107,7 +107,7 @@ video#bgVid {
 .fa-shopping-cart {
 	position: fixed;
 	z-index: 1000;
-	top: 50px;
+	top: 25px;
 	right: 120px;
 }
 
@@ -374,4 +374,31 @@ form {
 		}
 	}
 }
+
+#calendarContainer {
+	h1 {
+		font-size: $labelFontSize;
+	}
+	#calendar {
+		margin: 50px auto;
+		button:focus {
+			background-color: #F2F2F2;
+		}
+		.fc-unthemed td.fc-today {
+			background: $panoPink;
+		}
+		h2 {
+			font-size: $labelFontSize;
+		}
+	}
+}
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+	border-color: black;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+	font-weight: bold;
+	font-size: 18px;
+}
+
 

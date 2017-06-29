@@ -6,8 +6,16 @@ angular.module('navigationService', [])
 		var login = function() {
 			$location.path('/login');
 		};
+		var cart = function() {
+			$location.path('/cart');
+		};
+		var calendar = function() {
+			$location.path('calendar');
+		}
 		return {
 			home: home,
-			login: login
+			login: login,
+			cart: cart,
+			calendar: calendar
 		};
 	}])

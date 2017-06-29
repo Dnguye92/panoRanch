@@ -4,4 +4,7 @@ $(document).ready(function() {
 		edge: 'left'
 	});
 	$('.dropdown-button').dropdown();
+	// $('#calendar').fullCalendar({
+ //        // put your options and callbacks here
+ //    })
 })

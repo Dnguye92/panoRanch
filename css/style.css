@@ -27,7 +27,7 @@ hr {
   position: fixed;
   z-index: 6;
   right: 50px;
-  top: 50px;
+  top: 25px;
   font-size: 36px;
   color: black; }
 
@@ -68,7 +68,7 @@ video#bgVid {
 #logo {
   z-index: 1000;
   position: fixed;
-  top: 50px;
+  top: 25px;
   left: 50px; }
 
 #cart {
@@ -78,7 +78,7 @@ video#bgVid {
 .fa-shopping-cart {
   position: fixed;
   z-index: 1000;
-  top: 50px;
+  top: 25px;
   right: 120px; }
 
 .side-nav li:nth-child(1) {
@@ -267,5 +267,23 @@ form {
     #cartContainer #summary #summaryCity, #cartContainer #summary #summaryState,
     #cartContainer #summary #summaryZipcode, #cartContainer #summary #summaryPhone {
       display: inline-block; }
+
+#calendarContainer h1 {
+  font-size: 48px; }
+#calendarContainer #calendar {
+  margin: 50px auto; }
+  #calendarContainer #calendar button:focus {
+    background-color: #F2F2F2; }
+  #calendarContainer #calendar .fc-unthemed td.fc-today {
+    background: #FFD7DC; }
+  #calendarContainer #calendar h2 {
+    font-size: 48px; }
+
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+  border-color: black; }
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+  font-weight: bold;
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
