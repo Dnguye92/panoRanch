@@ -238,6 +238,10 @@ form {
   margin: 140px auto; }
   #cartContainer h1 {
     display: inline-block; }
+  #cartContainer .btn {
+    width: 90%;
+    background-color: #cf2a27;
+    margin: 15px auto; }
   #cartContainer #listedItems {
     border-top: #FFD7DC 3px solid;
     width: 85%;

@@ -338,6 +338,11 @@ form {
 	h1 {
 		display: inline-block;
 	}
+	.btn {
+		width: 90%;
+		background-color: #cf2a27;
+		margin: 15px auto;
+	}
 	#listedItems {
 		border-top: $panoPink 3px solid;
 		width: 85%;
