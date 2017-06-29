@@ -4,21 +4,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta viewport="UTF-8">
 	<title>Pano Ranch</title>
+	<!-- LOGO -->
 	<link rel="icon" href="img/head-logo.png">
+	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/fullcalendar.css">
+	<!-- SCRIPTS -->
 	<script
   src="https://code.jquery.com/jquery-2.2.2.min.js"
   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-	<script type="text/javascript" src="css/fullcalendar.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
-<body data-spy="scroll" data-target=".side-nav" data-offset="500">
+<body>
 	<a href="#!"><img src="img/head-logo.png" id="logo"></a>
 	
 	<ul id="slide-out" class="side-nav">
@@ -26,7 +28,7 @@
 		<li><a class="waves-effect" href="#!">Donation</a></li>
 		<li><a class="waves-effect" href="#/login" ng-click="login()">Sign in/Register</a></li>
 		<li><a class="waves-effect" href="#/calendar" ng-click="calendar()">Courses &amp; Events</a></li>
-		<li><a class="waves-effect" href="#!">More Information</a></li>
+		<li><a class="waves-effect" data-scroll href="#occassions">More Information</a></li>
 		<li><a class="waves-effect" href="#contact" ng-click="home()">Contact Us</a></li>
 	</ul>
 	<a href="#/cart" ng-click="cart()" id="cart">
@@ -37,10 +39,11 @@
 	<div ng-view></div>
 
 
+<!-- SCRIPTS -->
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/materialInit.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="angular/angular.js"></script>
 <script type="text/javascript" src="angular/angular-route.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
@@ -48,6 +51,7 @@
 <script type="text/javascript" src="js/controllers/CalendarCtrl.js"></script>
 <script type="text/javascript" src="services/navService.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<!-- INITIALIZE SMOOTH SCROLL -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		smoothScroll.init({

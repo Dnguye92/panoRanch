@@ -198,7 +198,7 @@ form {
 }
 
 #occassions {
-	margin: 80px auto;
+	margin: 80px auto 70px auto;
 	padding-bottom: 80px;
 	background-color: $panoPink;
 	h1 {
@@ -399,6 +399,42 @@ form {
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
 	font-weight: bold;
 	font-size: 18px;
+}
+
+#categoryContainer {
+	margin: 125px auto;
+	h1 {
+		font-size: $labelFontSize;
+	}
+	hr {
+		margin: 20px auto;
+	}
+	#reminder {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.topAdminBoxes {
+		width: 40%;
+		margin: 35px 10px;
+		display: inline-block;
+		border: 3px solid $panoPink;
+		border-radius: 3px;
+		hr {
+			width: 100%;
+		}
+	}
+	#bottomAdminBox {
+		border: 3px solid $panoPink;
+		border-radius: 3px;
+		width: 81%;
+		margin: 0 auto;
+		hr {
+			width: 100%;
+		}
+	}
+	#adminContainer {
+		margin: 0 auto;
+	}
 }
 
 

@@ -2,7 +2,7 @@ angular.module('navigationService', [])
 	.factory('navService', ['$location', function($location) {
 		var home = function() {
 			$location.path('/');
-		};
+		}
 		var login = function() {
 			$location.path('/login');
 		};
@@ -10,12 +10,16 @@ angular.module('navigationService', [])
 			$location.path('/cart');
 		};
 		var calendar = function() {
-			$location.path('calendar');
+			$location.path('/calendar');
+		}
+		var controlPanel = function() {
+			$location.path('/controlPanel');
 		}
 		return {
 			home: home,
 			login: login,
 			cart: cart,
-			calendar: calendar
+			calendar: calendar,
+			controlPanel: controlPanel
 		};
 	}])

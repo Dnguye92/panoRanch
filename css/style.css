@@ -135,7 +135,7 @@ form {
   font-size: 20px; }
 
 #occassions {
-  margin: 80px auto;
+  margin: 80px auto 70px auto;
   padding-bottom: 80px;
   background-color: #FFD7DC; }
   #occassions h1 {
@@ -285,5 +285,32 @@ form {
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
   font-weight: bold;
   font-size: 18px; }
+
+#categoryContainer {
+  margin: 125px auto; }
+  #categoryContainer h1 {
+    font-size: 48px; }
+  #categoryContainer hr {
+    margin: 20px auto; }
+  #categoryContainer #reminder {
+    width: 60%;
+    margin: 0 auto; }
+  #categoryContainer .topAdminBoxes {
+    width: 40%;
+    margin: 35px 10px;
+    display: inline-block;
+    border: 3px solid #FFD7DC;
+    border-radius: 3px; }
+    #categoryContainer .topAdminBoxes hr {
+      width: 100%; }
+  #categoryContainer #bottomAdminBox {
+    border: 3px solid #FFD7DC;
+    border-radius: 3px;
+    width: 81%;
+    margin: 0 auto; }
+    #categoryContainer #bottomAdminBox hr {
+      width: 100%; }
+  #categoryContainer #adminContainer {
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

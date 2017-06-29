@@ -1,10 +1,6 @@
 var PanoRanch = angular.module('PanoRanch', [
 	'ngRoute',
 	'navigationService'
-	// 'mwl.calendar',
- //  	'ui.bootstrap',
- //  	require('angular-bootstrap-calendar'),
- //  	require('angular-ui-bootstrap')
 ]);
 
 PanoRanch.config(['$routeProvider', function($routeProvider) {
@@ -23,6 +19,9 @@ PanoRanch.config(['$routeProvider', function($routeProvider) {
 	.when('/calendar', {
 		templateUrl: 'views/calendar.html'
 	})
+	.when('/controlPanel', {
+		templateUrl: 'views/controlPanel.html'
+	})
 	.otherwise({
 		redirectTo: '/'
 	})
@@ -33,7 +32,7 @@ PanoRanch.directive('calendar', function() {
 		restrict: 'A',
 		link: function(scope, element, attrs) {
 			$('#calendar').fullCalendar(scope.$eval(attrs.calendar), {
-				
+
 			})
 		}
 	}
